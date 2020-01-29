@@ -9,17 +9,17 @@ public class Ladi {
 		String s;
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("¹®Àå ÀÔ·Â½Ã ¿µ¾î ´ë/¼Ò¹®ÀÚ º¯°æ ÇÁ·Î±×·¥");
-		System.out.println("// ÀÔ·Â½Ã ÇÁ·Î±×·¥ Á¾·á");
+		System.out.println("ë°”ë³´");
+		System.out.println("// ë©ì²­ì•„");
 
 		while (true) {
-			System.out.printf("¹®Àå ÀÔ·Â : ");
+			System.out.printf("ë°”ë¶€ : ");
 			s = sc.nextLine();
 			if(s == "//")
 				break;
-			System.out.printf("¿µ¹® º¯°æ : ");
+			System.out.printf("ëª¨ì§€ : ");
 			
-			for (int i = 0; i < s.length(); i++) { // ¹®ÀÚÀÎ½Ä - ´ë/¼Ò¹®ÀÚ º¯°æ ³ª¸ÓÁö´Â ±×³É Ãâ·Â
+			for (int i = 0; i < s.length(); i++) {
 				a = s.charAt(i);
 				if ('a' <= s.charAt(i) && s.charAt(i) <= 'z') {
 /**/					System.out.printf("%c", a-32);
@@ -33,7 +33,7 @@ public class Ladi {
 			System.out.printf("\n\n");
 
 		}
-		System.out.println("¤µ¤¡¸µ");
+		System.out.println("ë¨¸ì„");
 		sc.close();
 	}
 
