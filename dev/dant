@@ -1,0 +1,78 @@
+톰캣 설치 위치{
+    C:\Program Files\Java\jre1.8.0_241
+    C:\Program Files\Apache Software Foundation\Tomcat 8.5
+}
+
+ Integer.toString(a);
+
+ <dependency>
+ <groupId>org.apache.tomcat.embed</groupId>
+ <artifactId>tomcat-embed-jasper</artifactId>
+ <!--<scope>provided</scope>-->
+ </dependency>
+
+
+spring.mvc.view.prefix=/WEB-INF/jsp/
+spring.mvc.view.suffix=.jsp
+
+
+시스템 환경 변수 Path{
+    C:\Program Files (x86)\Common Files\Oracle\Java\javapath;
+    %INTEL_DEV_REDIST%redist\intel64\compiler;
+    C:\Windows\system32;
+    C:\Windows;
+    C:\Windows\System32\Wbem;
+    C:\Windows\System32\WindowsPowerShell\v1.0\;
+    C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;
+    C:\Program Files (x86)\Brackets\command;
+    C:\Program Files (x86)\QuickTime\QTSystem\;
+    C:\Program Files\nodejs\;
+    C:\Program Files (x86)\Yarn\bin\;%JAVA_HOME%\bin;
+}
+
+
+C:\Program Files\Java\jdk1.8.0_241\bin
+
+
+        class Employee {
+            public String name;
+            public int age;
+        
+            public void print() {
+                System.out.println("사원의 이름은 " + this.name + "이고 나이는 " + this.age + "입니다.");
+            }
+        }
+        
+///////////////////////////////////////////////////////////////////////////////
+
+        class Manager extends Employee {
+            String jobOfManage;
+        
+            public void print() {
+                System.out.println("관리자 " + this.name + "은 " + this.jobOfManage + " 담당입니다.");
+            }
+        }
+        
+///////////////////////////////////////////////////////////////////////////////
+
+        public class Sample {
+            public static void main(String[] args) {
+        
+                Manager obj = new Manager();
+                obj.name = "홍길동";
+                obj.age = 40;
+                obj.jobOfManage = "PM";  
+                obj.print(); // 출력 결과 : 관리자 홍길동은 PM 담당입니다.
+            }
+        }
+
+
+2.17/18 - 휴일
+
+
+ㅁ - 000
+
+ㅂ = ㅁ%10
+ㅁ=ㅁ/10
+ㅈ
+ㄷ
