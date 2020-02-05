@@ -9,6 +9,7 @@ public class Ex4 extends JFrame{
 	JButton bt3 = new JButton("버튼3");
 	JButton bt4 = new JButton("버튼4");
 	JButton bt5 = new JButton("버튼5");
+	JButton bt6 = new JButton("버튼6");
 	
 	Panel p1 = new Panel();
 	Panel p2 = new Panel();
@@ -86,11 +87,22 @@ public class Ex4 extends JFrame{
 		});
 	}
 	
+	public void grid() {
+		p1.setLayout(new GridLayout(2,0));
+		p1.add(bt1);
+		p1.add(bt2);
+		p1.add(bt3);
+		p1.add(bt4);
+		p1.add(bt5);
+		p1.add(bt6);
+	}
+	
 	public Ex4() {
 		super("야 이 바보야");
 		getContentPane().add(p1);
 		
 		cardLayout();
+//		grid();
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setSize(270, 100);
 		setVisible(true);
