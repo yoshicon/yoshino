@@ -35,7 +35,7 @@ public class Bgtes extends JFrame implements ActionListener {
 		add(lap);
 		
 		setBounds(0,0,728,455);
-		setVisible(false);
+		setVisible(true);
 		setResizable(false);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 	}
