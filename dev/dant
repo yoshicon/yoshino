@@ -87,8 +87,57 @@ GUI 연습{
     }
 }
 
-for(q=1l1<9;1++){
-    a[q]=q++
-    a[1]
-    bt[q]
+맘스터치
+롯데리아
+본죽
+돈까스
+순대국
+홍콩반점
+덮밥
+초밥
+
+
+
+public class ImageTest {
+	public static void main(String[] args) {
+		Image image1 = null;
+		Image image2 = null;
+		Image image3 = null;
+	    try {
+	        // 파일로부터 이미지 읽기
+	        File sourceimage = new File("c:\\new_logo.gif");
+	        image1 = ImageIO.read(sourceimage);
+	    
+	        // InputStream으로부터 이미지 읽기
+	        InputStream is = new BufferedInputStream(
+	            new FileInputStream("c:\\new_logo.gif"));
+	        image2 = ImageIO.read(is);
+	    
+	        // URL로 부터 이미지 읽기
+	        URL url = new URL("http://www.ojc.asia/images/new_logo.gif");
+	        image3 = ImageIO.read(url);
+	    } catch (IOException e) {
+	    }
+
+용어설명{
+    클래스 - 231
+    인스턴스 설명 + 예시 232
+    다형성 설명 + 예시 354
+        부모, 자식
+    생성자 291
+    추상클래스 375
+        ㄴ 상속 310
+    인터페이스 381
+    메소드 오버로딩 283
+          오버라이딩 327
+    패키지 336
+    컬렉션 프레임워크 578
+    예외처리 정의/목적 416
+    쓰레드 722
+    변수 20 // ncs - 6
+    배열 182
+    내부클래스 장점 403
+    익명 내부클래스 410
+        일회성
+    라이브러리 ncs p 64
 }
