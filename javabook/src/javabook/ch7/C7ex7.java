@@ -8,8 +8,8 @@ public class C7ex7 {
 		try {
 			ServerSocket sc = new ServerSocket(127);
 			System.out.println("서버 실행");
-			Socket s = sc.accept();
-			while(true) {
+			Socket s = sc.accept(); // 서버 실행
+			while(true) {	// 클라 연결
 				BufferedReader br = new BufferedReader(new InputStreamReader(s.getInputStream()));
 				
 				System.out.println("클라 연결");
