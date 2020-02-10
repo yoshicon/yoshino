@@ -5,7 +5,7 @@ import java.net.*;
 public class C7ex6 {
 	public static void main(String[] args) {
 		try {
-			URL url = new URL("http://naver.com:80/index.html");
+			URL url = new URL("http://yahoo.co.jp:80/index.html");
 			System.out.println("프로토콜 : "+url.getProtocol());
 			System.out.println("호스트 : "+url.getHost());
 			System.out.println("포트 : "+url.getPort());

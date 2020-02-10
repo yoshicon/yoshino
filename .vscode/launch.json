@@ -1,0 +1,84 @@
+{
+    // IntelliSense를 사용하여 가능한 특성에 대해 알아보세요.
+    // 기존 특성에 대한 설명을 보려면 가리킵니다.
+    // 자세한 내용을 보려면 https://go.microsoft.com/fwlink/?linkid=830387을(를) 방문하세요.
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-OperatorEx1<javachobo>",
+            "request": "launch",
+            "mainClass": "javachobo.ch3.OperatorEx1",
+            "projectName": "javachobo"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-OperatorEx11<javachobo>",
+            "request": "launch",
+            "mainClass": "javachobo.ch3.OperatorEx11",
+            "projectName": "javachobo"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-OperatorEx12<javachobo>",
+            "request": "launch",
+            "mainClass": "javachobo.ch3.OperatorEx12",
+            "projectName": "javachobo"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-OperatorEx13<javachobo>",
+            "request": "launch",
+            "mainClass": "javachobo.ch3.OperatorEx13",
+            "projectName": "javachobo"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-OperatorEx3<javachobo>",
+            "request": "launch",
+            "mainClass": "javachobo.ch3.OperatorEx3",
+            "projectName": "javachobo"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-OperatorEx5<javachobo>",
+            "request": "launch",
+            "mainClass": "javachobo.ch3.OperatorEx5",
+            "projectName": "javachobo"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-OperatorEx7<javachobo>",
+            "request": "launch",
+            "mainClass": "javachobo.ch3.OperatorEx7",
+            "projectName": "javachobo"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-OperatorEx9<javachobo>",
+            "request": "launch",
+            "mainClass": "javachobo.ch3.OperatorEx9",
+            "projectName": "javachobo"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-GUItes<osawa>",
+            "request": "launch",
+            "mainClass": "mimina.GUItes",
+            "projectName": "osawa"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Ladi<osawa>",
+            "request": "launch",
+            "mainClass": "mimina.Ladi",
+            "projectName": "osawa"
+        }
+    ]
+}

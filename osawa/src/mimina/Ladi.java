@@ -6,7 +6,7 @@ public class Ladi {
 
 	public static void main(String[] args) {
 
-		System.out.println("!! % !!");
+		System.out.println("insert num");
 		int hap = 0, t = 0; /////
 
 		Scanner s = new Scanner(System.in);

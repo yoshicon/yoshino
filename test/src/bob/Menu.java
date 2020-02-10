@@ -5,7 +5,9 @@ import java.io.FileInputStream;
 public class Menu {
 	public static String Menu(String babo) {
 		try {
-			String filePath = "D:\\dev\\test\\src\\GUItes\\bab.txt";
+			// String filePath = "D:\\dev\\test\\src\\GUItes\\bab.txt";
+			String filePath = "https://elsanna.000webhostapp.com/etc/bob.txt";
+
 			FileInputStream fileStream = null;
 
 			fileStream = new FileInputStream(filePath);
@@ -18,10 +20,10 @@ public class Menu {
 		} catch (Exception e) {
 			e.getStackTrace();
 		}
-		
+
 		String[] spl = babo.split(", ");
 		double rd = Math.random();
 		int iv = (int) (rd * spl.length);
 		return spl[iv];
-		}
+	}
 }

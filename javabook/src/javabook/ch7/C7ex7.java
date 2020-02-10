@@ -6,10 +6,10 @@ public class C7ex7 {
 //192.168.0.11
 	public static void main(String[] args) {
 		try {
-			ServerSocket sc = new ServerSocket(5000);
+			ServerSocket sc = new ServerSocket(127);
 			System.out.println("서버 실행");
+			Socket s = sc.accept();
 			while(true) {
-				Socket s = sc.accept();
 				BufferedReader br = new BufferedReader(new InputStreamReader(s.getInputStream()));
 				
 				System.out.println("클라 연결");
