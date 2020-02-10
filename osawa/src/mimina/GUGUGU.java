@@ -1,1 +1,0 @@
-package mimina;public class GUGUGU{public static void main(String[] args){int _=20;while(_>10){System.out.println(_--);}boolean __=true; while(__){_--;System.out.println(_);if(_==3){__=false;System.out.println("さぁ傅");}}}}
