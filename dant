@@ -169,3 +169,18 @@ https://www.newline.co/30-days-of-vue?fbclid=IwAR0YeQdsuPa6dEMwdQb09RrLM5ELz7iIl
 	}아니면
 	아이디 틀림
 }
+
+MVC{
+	모델{
+		뷰에 표현될 데이터 표현
+	}
+	뷰{
+		보이는거
+		GUI
+	}
+	칸트롤라{
+		프로그램 핵심
+		UI랑 데이터 중계
+		이벤트 처리
+	}
+}
