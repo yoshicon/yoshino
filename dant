@@ -119,7 +119,7 @@ public class ImageTest {
 	    } catch (IOException e) {
 	    }
 
-용어설명{
+용어설명{ - 부분감점 쌉가능
     클래스 - 231
     인스턴스 설명 + 예시 232
     다형성 설명 + 예시 354
@@ -142,5 +142,30 @@ public class ImageTest {
     라이브러리 ncs p 64
 }
 
+시험문제{ // 백지는 에바임
+	낸다한거{
+		로그인 머시기 중접 if인가 먼가 하는거
+		아디 홍 pw 1234
+		조건 머머머 줌
+		4~5개쯤
+		책에있는게 기본
+	}
+1 40점-- 로그인 화면 띄우는거 : 코딩
+2 30점-- 1번보단 어려운 코딩일듯			//스위치, 어레이리스트, 화일문 /*사실 아직 머름*/: 코딩
+3 - 용어정리 : 총 6문제
+서술형 있음
+
+}
+
 vue
 https://www.newline.co/30-days-of-vue?fbclid=IwAR0YeQdsuPa6dEMwdQb09RrLM5ELz7iIln2TH9xptXLEcgiBQFwWpQ1Xp9A
+
+메인{
+	조건(아이디){
+		조건(비번){
+		로그인 성공
+		}아니면
+		비번 틀림
+	}아니면
+	아이디 틀림
+}
