@@ -1,4 +1,4 @@
-package bob;
+package sv;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -17,16 +17,13 @@ public class Grp extends JFrame implements ActionListener{
 		BorderLayout lay = new BorderLayout();
 		setLayout(lay);
 		
-	/*
 		bt1.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				setM();
+				setN();
 			}
 		});
-	/*/
-		bt1.addActionListener((e) -> {setM();});
-	//*/
+		
 		add(bt1, BorderLayout.SOUTH);
 		add(jl, BorderLayout.CENTER);
 		jl.setHorizontalAlignment(JLabel.CENTER);
@@ -36,8 +33,8 @@ public class Grp extends JFrame implements ActionListener{
 		setVisible(true);
 	}
 	
-	public void setM() {
-		EvenMoham.mn = Menu.Menu(EvenMoham.babo);
+	public void setN() {
+		EvenMoham.mn = toString(Math.random());
 		jl.setText(EvenMoham.mn);
 	}
 	

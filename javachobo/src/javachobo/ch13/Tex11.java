@@ -1,0 +1,48 @@
+package javachobo.ch13;
+import java.util.*;
+public class Tex11 {
+	public static void main(String[] args) {
+		Thd1 t1 = new Thd1("쓰레드1");
+		Thd2 t2 = new Thd2("쓰레드2");
+		t1.start();
+		t2.start();
+	}
+}
+class Thd1 extends Thread{
+	Thd1(String nm){
+		super(nm);
+	}
+	@Override
+	public void run() {
+		try {
+			sleep(5000);
+		}catch(InterruptedException q) {}
+	}
+}
+
+class Thd2 extends Thread{
+	Thd2(String as) {
+		super(as);
+	}
+	
+	@Override
+	public void run() {
+		Map map = getAllStackTraces();
+		Iterator it = map.keySet().iterator();
+		
+		int q=0;
+		while(it.hasNext()) {
+			Object ob = it.next();
+			Thread t = (Thread)ob;
+			StackTraceElement[] ste = (StackTraceElement[])(map.get(ob));
+			
+			System.out.println("[" + ++q + "] 이름 : "+t.getName()+
+								", 그룹 : "+t.getThreadGroup().getName()+
+								", 데먼 : "+t.isDaemon());
+			
+			for(int a = 0; a< ste.length; a++)
+				System.out.println(ste[a]);
+			System.out.println("");
+		}
+	}
+}

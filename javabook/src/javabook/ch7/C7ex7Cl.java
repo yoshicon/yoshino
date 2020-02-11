@@ -17,6 +17,7 @@ public class C7ex7Cl {
 			pw.close();
 			s.close();
 			System.out.println("클라끗");
+			sc.close();
 		}catch(Exception e) {
 			e.printStackTrace();
 		}

@@ -5,8 +5,8 @@ import java.io.FileInputStream;
 public class Menu {
 	public static String Menu(String babo) {
 		try {
-			// String filePath = "D:\\dev\\test\\src\\GUItes\\bab.txt";
-			String filePath = "https://elsanna.000webhostapp.com/etc/bob.txt";
+			String filePath = "D:\\dev\\yoshino\\bab.txt";
+			//String filePath = "https://elsanna.000webhostapp.com/etc/bob.txt";
 
 			FileInputStream fileStream = null;
 

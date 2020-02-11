@@ -1,21 +1,23 @@
-package javabook.ch7;
+package sv;
+import java.io.*;
+import java.net.*;
+import java.util.Scanner;
 
-import java.io.OutputStreamWriter;
-import java.io.PrintWriter;
-import java.net.Socket;
-import java.util.*;
+public class Cli {
 
-public class C7ex7Clt {
 	public static void main(String[] args) {
 		try {
-			Socket s = new Socket("192.168.0.20", 5000);
+			Socket s = new Socket("127.0.0.1", 127);
+			Scanner sc = new Scanner(System.in);
 			System.out.println("클라 실행");
 			PrintWriter pw = new PrintWriter(new OutputStreamWriter(s.getOutputStream()));
 
-			pw.print("클라임");
+			String st = sc.next();
+			pw.print(st);	// 서버에 메세지 입력
 			pw.close();
 			s.close();
 			System.out.println("클라끗");
+			sc.close();
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
