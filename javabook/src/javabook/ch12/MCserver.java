@@ -5,8 +5,6 @@ import java.net.*;
 import java.util.*;
 import java.util.logging.*;
 
-import javax.xml.ws.handler.MessageContext;
-
 import com.google.gson.*;
 
 public class MCserver {

@@ -8,8 +8,8 @@ import com.google.gson.*;
 import static java.util.logging.Level.*;
 
 public class MCcont implements Runnable{
-	private final MCUI v;			///////////// 퍼블릭인뎅
-	private final MCData chatData;	///////////// 머임?
+	private final MCUI v;			
+	private final MCData chatData;
 	
 	// 소켓 연결용 변수
 	private String ip = "127.0.0.1";
