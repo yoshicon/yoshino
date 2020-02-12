@@ -73,6 +73,18 @@ public class MCcont implements Runnable{
 		try {
 			socket = new Socket(ip, 8888);
 			logger.log(INFO, "클라 -> 서버 연결 성공");
+			
+			inmsg = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+			outmsg = new PrintWriter(socket.getOutputStream(), true);
+			
+			m = new Message(v.id, "", "", "login");
+			outmsg.println(gson.toJson(m));
+			
+			thread = new Thread(this);
+			thread.start();
+		}catch(Exception e) {
+			logger.log(WARNING, "머시냐 그 UI 연결하다 오류떴다");
+			e.printStackTrace();
 		}
 		
 	}
@@ -80,7 +92,7 @@ public class MCcont implements Runnable{
 	
 	@Override
 	public void run() {
-		// TODO Auto-generated method stub
-		
+		MCcont ap = new MCcont(new MCData(), new MCUI());
+		ap.appMain();		
 	}
 }
