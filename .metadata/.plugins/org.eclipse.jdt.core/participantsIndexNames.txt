@@ -1,0 +1,9 @@
+INDEX VERSION 1.131
+D:\dev\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\433049895.index
+\VAVO\src
+D:\dev\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3271193799.index
+\test\src
+D:\dev\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4098247677.index
+\vavo\src\main\java
+D:\dev\yoshino\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4098247677.index
+\vavo\src\main\java

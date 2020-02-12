@@ -1,0 +1,41 @@
+package javachobo.ch13;
+
+public class Tex8 {
+
+	public static void main(String[] args) {
+		Tex8_1 th1 = new Tex8_1();
+		Tex8_2 th2 = new Tex8_2();
+		th2.setPriority(7);
+		
+		System.out.println("스레드 1 - ㅋ : "+th1.getPriority());
+		System.out.println("스레드 2 - ヲ  : "+th2.getPriority());
+		
+		th1.start();
+		th2.start();
+	}
+
+}
+
+class Tex8_1 extends Thread{
+	@Override
+	public void run() {
+		for(int q=0; q<300; q++) {
+			System.out.println("ㅋ");
+			for(int w = 0; w< 10000000; w++);
+			if(q%100==0)
+				System.out.println();
+		}
+	}
+}
+
+class Tex8_2 extends Thread{
+	@Override
+	public void run() {
+		for(int q=0; q<300; q++) {
+			System.out.println("ヲ");
+			for(int w = 0; w< 10000000; w++);
+			if(q%100==0)
+				System.out.println();
+		}
+	}
+}

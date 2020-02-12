@@ -1,0 +1,5 @@
+package javabook.ch11;
+
+public class C11ex6 extends Thread {
+
+}

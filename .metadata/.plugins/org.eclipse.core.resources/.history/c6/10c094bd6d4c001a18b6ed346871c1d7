@@ -1,0 +1,11 @@
+package javabook.ch11;
+
+public class C11ex5 implements Runnable {
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,20 @@
+package javachobo.ch15;
+import java.io.*;
+
+public class DOS {
+
+	public static void main(String[] args) {
+		FileOutputStream fos = null;
+		DataOutputStream dos = null;
+		
+		try {
+			fos new FileOutputStream("sam.dat");
+			dos = new DataOutputStream(fos);
+			dos.write(10);
+		}catch(IOException e) {
+			e.printStackTrace();
+		}
+
+	}
+
+}

@@ -1,0 +1,31 @@
+package javabook.ch11;
+
+public class C11ex7 extends Thread{
+	public int tot;
+	private sellm sm;
+	
+	@Override
+	public void run() {
+		String tname = Thread.currentThread().getName();
+		for(int q=0 ; q<3; q++)
+			System.out.println(tname+"- 팜"+ sm.sell());
+	}
+	
+	public static void main(String[] args) {
+		System.out.println("앙 티켓팅-+");
+
+	}
+	
+	class sellm {
+		synchronized int sell() {
+			tot--;
+			try {
+				Thread.sleep(5000);
+			}catch(InterruptedException e) {
+				e.printStackTrace();
+			}
+			return tot;
+		}
+	}
+
+}

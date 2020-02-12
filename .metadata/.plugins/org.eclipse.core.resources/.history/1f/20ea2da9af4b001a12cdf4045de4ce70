@@ -1,0 +1,9 @@
+package javabook.ch7;
+
+import java.io.*;
+
+public class C7ex4 {
+	public static void main(String[] args) {
+		
+	}
+}

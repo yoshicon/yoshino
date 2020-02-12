@@ -1,0 +1,13 @@
+package javabook.ch11;
+
+public class C11ex10 {
+
+	private void prim(Myf fnc) {
+		fnc.go("바부");
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

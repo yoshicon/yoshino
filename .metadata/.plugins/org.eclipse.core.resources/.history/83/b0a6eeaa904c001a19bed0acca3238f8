@@ -1,0 +1,5 @@
+package javabook.ch11;
+@FunctionalInterface
+public class Myf {
+	public void go(String s);
+}

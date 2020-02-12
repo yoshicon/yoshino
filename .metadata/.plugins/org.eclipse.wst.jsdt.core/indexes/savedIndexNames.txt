@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+D:\dev\yoshino\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2030974815.index
+1665461027.index
+1246194161.index
+4098247677.index
+2565351737.index
+3118856024.index
+2531256265.index

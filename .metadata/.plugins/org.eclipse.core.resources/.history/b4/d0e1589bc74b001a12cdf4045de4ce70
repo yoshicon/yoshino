@@ -1,0 +1,14 @@
+package javachobo.ch15;
+import java.io.*;
+public class DIS {
+
+	public static void main(String[] args) {
+		try {
+			FileInputStream fis = new FileInputStream("D:/dev/sam.dat");
+		}catch(IOException e) {
+			e.printStackTrace();
+		}
+
+	}
+
+}

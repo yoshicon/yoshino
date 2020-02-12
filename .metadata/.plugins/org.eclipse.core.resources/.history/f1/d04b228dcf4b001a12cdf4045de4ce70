@@ -1,0 +1,18 @@
+package test;
+import java.util.*;
+import java.util.stream.IntStream;
+
+public class Lam {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("ip");
+		int a = sc.nextInt();
+		int s = sc.nextInt();
+		
+		IntStream.range(a, s).forEach((int value) -> System.out.println(value));
+				
+		sc.close();
+	}
+
+}

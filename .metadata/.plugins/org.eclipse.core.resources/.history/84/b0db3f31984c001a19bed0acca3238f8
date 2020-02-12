@@ -1,0 +1,35 @@
+package javachobo.ch14;
+
+interface Myfn{
+	void mym();
+}
+
+class out{
+	int val = 10;
+	
+	class Inn{
+		int val = 20;
+		
+		void met(int q) {
+			int val = 30;
+			
+			Myf f = () ->{
+				System.out.println("q :" + q);
+				System.out.println("val :" + val);
+				System.out.println("this.val :"+ ++this.val);
+				System.out.println("q :" + ++out.this.val);
+			};
+			f.mym();
+		}
+	}
+}
+
+public class Lamdex3 {
+
+	public static void main(String[] args) {
+		out ot = new out();
+		out.Inn in = ot.new Inn();
+		in.met(127);
+	}
+
+}

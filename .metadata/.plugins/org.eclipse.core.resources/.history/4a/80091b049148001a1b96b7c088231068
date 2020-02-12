@@ -1,0 +1,14 @@
+package GUItes;
+
+import java.io.*;
+
+public class EvenMoham {
+
+	public String babo = "";
+	
+	public static void main(String[] args) throws IOException {
+		
+		Menu.Menu();
+		Grp gp = new Grp();
+	}
+}

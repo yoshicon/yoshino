@@ -1,0 +1,25 @@
+package javabook.ch7;
+import java.io.*;
+import java.net.*;
+
+public class C7ex6 {
+	public static void main(String[] args) {
+		try {
+			URL url = new URL("http://naver.com:8080/index.html");
+			System.out.println("프로토콜 : "+url.getProtocol());
+			System.out.println("호스트 : "+url.getHost());
+			System.out.println("포트 : "+url.getPort());
+			
+			System.out.println("하지마");
+			InputStream is = url.openStream();
+			BufferedReader br = new BufferedReader(new InputStreamReader(is));
+			String mg;
+			while((mg = br.readLine()) != null)
+				System.out.println(mg);
+			br.close();
+			is.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

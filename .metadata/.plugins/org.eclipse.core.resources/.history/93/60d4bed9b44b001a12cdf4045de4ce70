@@ -1,0 +1,12 @@
+package javabook.ch7;
+import java.io.*;
+import java.net.*;
+
+public class C7ex8 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

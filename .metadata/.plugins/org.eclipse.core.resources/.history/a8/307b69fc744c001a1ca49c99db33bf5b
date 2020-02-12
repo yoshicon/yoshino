@@ -1,0 +1,31 @@
+package javabook.ch11;
+
+public class C11ex6 extends Thread {
+	@Override
+	public void run() {
+		String tnam = Thread.currentThread().getName();
+		System.out.println(tnam+"시작");
+		
+		for(int a = 0 ; a<10 ; a++) {
+			System.out.println(tnam + "-" +a);
+			//*
+			 	try{
+			 		Thread.sleep(1000);
+			 	}catch(InterruptedException e){
+			 		e.printStackTrace();
+			 	}
+			 //*/
+		}
+		System.out.println(tnam+"뎡려");
+
+	}
+
+	public static void main(String[] args) {
+		C11ex6 app = new C11ex6();
+		for(int a=0 ; a<2; a++) {
+			Thread t = new Thread(app);
+			t.start();
+		}
+		System.out.println("메인 끗");
+	}
+}

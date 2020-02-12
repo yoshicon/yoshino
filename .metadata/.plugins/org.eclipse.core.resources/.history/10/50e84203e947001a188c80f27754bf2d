@@ -1,0 +1,44 @@
+package GUItes;
+
+import java.io.*;
+import java.util.*;
+
+public class EvenMoham {
+	// public static void main(String[] args) {
+	// String[] m = {"맘스터치","롯데리아","본죽","돈까스","순대국",
+	// "홍콩반점", "덮밥", "초밥"};
+
+	// double rd = Math.random();
+	// int iv = (int)(rd * m.length);
+	// System.out.println(m[iv]);
+	// }
+
+	public static void main(String[] args) throws IOException {
+		String babo = "";
+		try {
+			// 바이트 단위로 파일읽기
+			String filePath = "D:\\dev\\test\\src\\GUItes\\bab.txt"; // 대상 파일
+			FileInputStream fileStream = null; // 파일 스트림
+
+			fileStream = new FileInputStream(filePath);// 파일 스트림 생성
+			// 버퍼 선언
+			byte[] readBuffer = new byte[fileStream.available()];
+			while (fileStream.read(readBuffer) != -1) {
+			}
+			babo += new String(readBuffer); // 출력
+
+			fileStream.close(); // 스트림 닫기
+		} catch (Exception e) {
+			e.getStackTrace();
+		}
+
+		double rd = Math.random();
+		String[] spl = babo.split(", ");
+		int iv = (int) (rd * spl.length);
+		System.out.println(spl[iv]);
+
+//		System.out.println(spl.length);
+//		System.out.println(Arrays.toString(spl));
+	}
+
+}

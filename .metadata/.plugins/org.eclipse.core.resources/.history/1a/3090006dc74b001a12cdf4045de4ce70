@@ -1,0 +1,10 @@
+package javachobo.ch15;
+
+public class DIS {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

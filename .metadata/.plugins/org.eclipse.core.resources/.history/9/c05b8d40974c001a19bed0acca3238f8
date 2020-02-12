@@ -1,0 +1,10 @@
+package javachobo.ch14;
+
+public class Lamdex1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

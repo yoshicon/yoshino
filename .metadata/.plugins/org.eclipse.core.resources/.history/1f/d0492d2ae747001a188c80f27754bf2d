@@ -1,0 +1,42 @@
+package GUItes;
+
+import java.io.*;
+
+public class EvenMoham {
+	// public static void main(String[] args) {
+	// 	String[] m = {"맘스터치","롯데리아","본죽","돈까스","순대국",
+	// 				"홍콩반점", "덮밥", "초밥"};
+
+	// 	double rd = Math.random();
+	// 	int iv = (int)(rd * m.length);
+	// 	System.out.println(m[iv]);
+	// }
+
+	public static String[] splitLine(String a) {
+        String sent = getLine().toLowerCase();
+        String[] arr = sent.split(",");
+        for (int x = 0; x < arr.length; x++) {
+            System.out.println("arr: "+arr[x]);
+        }
+        return arr;
+    }
+
+	public static void main (String[] args) throws IOException {
+		try {
+			// 바이트 단위로 파일읽기
+			 String filePath = "D:\\dev\\test\\src\\GUItes\\bab.txt"; // 대상 파일
+			 FileInputStream fileStream = null; // 파일 스트림
+			 
+			 fileStream = new FileInputStream( filePath );// 파일 스트림 생성
+			 //버퍼 선언
+			 byte[ ] readBuffer = new byte[fileStream.available()];
+			 while (fileStream.read( readBuffer ) != -1){}
+			 System.out.println(new String(readBuffer)); //출력
+ 
+			 fileStream.close(); //스트림 닫기
+		 } catch (Exception e) {
+		 e.getStackTrace();
+		 }
+	}
+
+}

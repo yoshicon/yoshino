@@ -1,0 +1,28 @@
+package GUItes;
+
+import java.awt.Image;
+import java.io.IOException;
+import java.net.URL;
+import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class Webrd{	
+    public static void main( String[] args ) {
+    	Image image = null;
+    	String tx ="https://dcimg5.dcinside.com/dccon.php?no=62b5df2be09d3ca567b1c5bc12d46b394aa3b1058c6e4d0ca41648b65def216e3c52768ef32c9a7b7f8999badd57eeb5a97d6ebf74fc0740db9ac5304f66dedfc3e9cd34e001"; 
+        try {
+            URL url = new URL(tx);
+            image = ImageIO.read(url);
+        } catch (IOException e) {
+        	e.printStackTrace();
+        }
+ 
+        JFrame frame = new JFrame();
+        frame.setSize(300, 300);
+        JLabel label = new JLabel(new ImageIcon(image));
+        frame.add(label);
+        frame.setVisible(true);
+    }
+}
