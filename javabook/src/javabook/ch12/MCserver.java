@@ -31,7 +31,6 @@ public class MCserver {
 				chatThreads.add(chat);
 				chat.start();
 			}
-			
 		}catch(Exception e) {
 			logger.info("서버 시작하는데 오류뜸 ㅋ");
 			e.printStackTrace();
