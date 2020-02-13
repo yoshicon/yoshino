@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="javabook.ch11.C11ex7"/>
 <fullyQualifiedTypeName name="javabook.ch11.C11ex9"/>
 <fullyQualifiedTypeName name="javachobo.ch13.Tex1"/>
 <fullyQualifiedTypeName name="javachobo.ch13.Tex2_1"/>
@@ -59,5 +58,6 @@
 <fullyQualifiedTypeName name="javax.swing.JComponent"/>
 <fullyQualifiedTypeName name="javabook.ch12.Message"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="javax.xml.ws.handler.MessageContext.Scope"/>
 <fullyQualifiedTypeName name="mt.Login"/>
 </qualifiedTypeNameHistroy>
