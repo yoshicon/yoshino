@@ -330,3 +330,62 @@ https://bootsnipp.com/
 	전송	- tcp
 	응용 - ftp / tellnet / http 같은거 다 여기임
 }
+
+
+cmd 명령어{
+	cls
+	화면 초기화
+	
+	clolor
+	글씨색 변경
+	
+	ipconfig
+	아이피 확인
+	
+	taskkill
+	프로세스 종료
+	
+	cd
+	디렉토리변경
+	
+	dir
+	현제 디렉토리 확인
+	
+	md, mkdir
+	디렉토리 생성
+	mkdir a; b; c하면 현제 디렉토리에 a, b, c 해서 3개 한번에 만들어짐
+	
+	notepad
+	노트장 엶
+	
+	calc
+	계산기 엶
+	
+	control
+	제어판
+	
+	shutdown -s -t A
+	A초 후 컴 종료
+	
+	git config user.name "---"
+	유저이름 설정
+	git config user.email "---"
+	이메일 설정
+	git config --global --list
+	전역 설정 정보 조회
+	git config --list
+	저장소별 설정 정보 조회
+	git config--global clolr.ui "auto"
+	git 출력결과 색상 활성화
+	git clone <저장소 url>
+	저장소 복제
+	git remote add <원격 저장소> <저장소 URL>
+	새로운 원격 저장소 추가
+	git add <파일>
+	파일 추가
+	git commit -m "메세지"
+	커밋
+	git log
+	모든 로그 보기
+	
+}
