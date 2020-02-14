@@ -1,9 +1,0 @@
-package javachobo.ch11;
-
-import java.util.*;
-
-public class Alstex1 {
-	public static void main(String[] args) {
-		
-	}
-}
